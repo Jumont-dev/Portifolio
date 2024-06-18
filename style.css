@@ -1,0 +1,269 @@
+/* Estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mate SC", serif;    
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(138, 43, 226);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+h1{
+      color: blueviolet;
+    font-family: "Anton", sans-serif;
+}
+h3{
+    color: blueviolet;
+    font-size: 52px;
+    line-height: 40px;
+    font-family: "Mate SC", serif;
+    text-align: center;
+    padding: 60px;
+}
+h4{
+    color: #fff;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interfase{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interfase{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(134, 134, 133);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+header a:hover{
+    color: antiquewhite;
+    transform: scale(1.05)
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+ button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #6d1675;
+    transform: scale(1.05);
+}
+
+/* ESTILO TOPO DO SITE */
+section.topo-do-site{
+    padding: 80px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h2{
+     color: blueviolet;
+     font-size: 52px;
+     line-height: 40px;
+     font-family: "Mate SC", serif;
+     padding: 40px;
+}
+
+.topo-do-site .txt-topo-do-site p{
+    color:antiquewhite;
+    margin: 40px 0px;
+    font-size: 25px;
+    padding: 40px;
+}
+
+img{
+    width: 400px;
+}
+
+
+.topo-do-site .img-topo-do-site img{
+    position: relative;
+    animation: Flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes Flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* Habilidades */
+
+section.Habilidades{
+    padding: 40px 4%;
+}
+
+section.Habilidades .flex{
+    gap: 60px;
+}
+
+.Habilidades .Habilidades-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.Habilidades .Habilidades-box:hover{
+    transform: scale(1.05px);
+    box-shadow: 0 0 8px #ffffff85;
+}
+.Habilidades .Habilidades-box i{
+    font-size: 70px;
+    color: blueviolet;
+}
+.Habilidades .Habilidades-box h4{
+    font-size: 28px ;
+    margin: 15px 0;
+}
+
+/* ESTILO DO PROJETO */
+section.Projeto{
+    padding: 120px 6%;
+    box-shadow: 0px 0px 40px 10px hsla(0, 5%, 63%, 0.705);
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+/* ESTILO DO CONTATO*/
+section.formulario{
+    padding: 80px 4px;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(63, 57, 57);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align:center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: blueviolet;
+    color: #000;
+    font-weight: 700px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*  ESTILO DO RODAPÉ*/
+footer{
+    padding: 60px 4%;
+    box-shadow:  0 0 40px 10px  hsla(0, 3%, 32%, 0.616);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+    border-bottom: 2px solid;
+}
+
+.border{
+    border-top: 2px solid blueviolet;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: blueviolet;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color: blueviolet;
+    font-size: 22px;
+}
+footer .line-footer p a{
+    color: #fff;
+}
